@@ -1,5 +1,7 @@
 package com.github.eykemesquita.crud_api.entity;
 
+import java.time.LocalDate;
+import java.time.LocalDateTime;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -33,7 +35,7 @@ public class Client {
     private String phone;
 
     @Column(name = "bith_date")
-    private Date birthDate;
+    private LocalDate birthDate;
 
     @Column(name = "is_employee")
     private boolean isEmployee;
@@ -54,10 +56,10 @@ public class Client {
     private String modifiedBy;
 
     @Column(name = "created_date")
-    private Date createdDate;
+    private LocalDateTime createdDate;
 
     @Column(name = "modified_date")
-    private Date modifiedDate;
+    private LocalDateTime modifiedDate;
 
     @Column(name = "email_opt_in")
     private boolean emailOptIn;

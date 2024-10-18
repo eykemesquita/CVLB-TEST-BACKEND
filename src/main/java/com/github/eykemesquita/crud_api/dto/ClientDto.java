@@ -6,6 +6,8 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.util.Date;
 
 
@@ -25,7 +27,7 @@ public class ClientDto {
 
     private String phone;
 
-    private Date birthDate;
+    private LocalDate birthDate;
 
     private boolean isEmployee;
 
@@ -39,9 +41,9 @@ public class ClientDto {
 
     private String modifiedBy;
 
-    private Date createdDate;
+    private LocalDateTime createdDate;
 
-    private Date modifiedDate;
+    private LocalDateTime modifiedDate;
 
     private boolean emailOptIn;
 
