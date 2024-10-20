@@ -1,14 +1,14 @@
 package com.github.eykemesquita.crud_api.entity;
 
-import java.time.LocalDate;
-import java.time.LocalDateTime;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-import java.util.Date;
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.util.List;
 
 @Getter
 @Setter
@@ -34,7 +34,7 @@ public class Client {
     @Column(name = "phone")
     private String phone;
 
-    @Column(name = "bith_date")
+    @Column(name = "birth_date")
     private LocalDate birthDate;
 
     @Column(name = "is_employee")
@@ -73,6 +73,7 @@ public class Client {
     @Column(name = "push_opt_in")
     private boolean pushOptIn;
 
-    //private List<Address> addressList;
-
+    // Relação com Address (endereço)
+    @OneToMany(mappedBy = "client", cascade = CascadeType.ALL, orphanRemoval = true)
+    private List<Address> addresses;
 }

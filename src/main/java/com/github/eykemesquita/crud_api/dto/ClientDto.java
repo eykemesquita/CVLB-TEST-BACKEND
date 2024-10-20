@@ -1,6 +1,5 @@
 package com.github.eykemesquita.crud_api.dto;
 
-
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -8,8 +7,7 @@ import lombok.Setter;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
-import java.util.Date;
-
+import java.util.List;
 
 @Getter
 @Setter
@@ -53,6 +51,5 @@ public class ClientDto {
 
     private boolean pushOptIn;
 
-    //private List<Address> addressList;
-
+    private List<AddressDto> addressList;  // Mapeia a lista de endereços sem a referência de volta ao cliente
 }
