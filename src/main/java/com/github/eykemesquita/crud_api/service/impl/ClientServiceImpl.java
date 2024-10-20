@@ -1,9 +1,12 @@
 package com.github.eykemesquita.crud_api.service.impl;
 
+import com.github.eykemesquita.crud_api.dto.AddressDto;
 import com.github.eykemesquita.crud_api.dto.ClientDto;
+import com.github.eykemesquita.crud_api.entity.Address;
 import com.github.eykemesquita.crud_api.entity.Client;
 import com.github.eykemesquita.crud_api.exception.ResourceNotFoundException;
 import com.github.eykemesquita.crud_api.mapper.ClientMapper;
+import com.github.eykemesquita.crud_api.repository.AddressRepository;
 import com.github.eykemesquita.crud_api.repository.ClientRepository;
 import com.github.eykemesquita.crud_api.service.ClientService;
 import lombok.AllArgsConstructor;
@@ -19,6 +22,7 @@ import java.util.stream.Collectors;
 public class ClientServiceImpl implements ClientService {
 
     private final ClientRepository clientRepository;
+    private final AddressRepository addressRepository;
 
     @Override
     public ClientDto createClient(ClientDto clientDto) {
@@ -27,6 +31,9 @@ public class ClientServiceImpl implements ClientService {
         client.setModifiedDate(LocalDateTime.now());
 
         Client savedClient = clientRepository.save(client);
+
+        saveClientAddresses(clientDto.getAddressList(), savedClient);
+
         return ClientMapper.mapToClientDto(savedClient);
     }
 
@@ -65,6 +72,9 @@ public class ClientServiceImpl implements ClientService {
         client.setModifiedDate(LocalDateTime.now());
 
         Client updatedClient = clientRepository.save(client);
+
+        saveClientAddresses(updatedClientDto.getAddressList(), updatedClient);
+
         return ClientMapper.mapToClientDto(updatedClient);
     }
 
@@ -76,9 +86,24 @@ public class ClientServiceImpl implements ClientService {
         clientRepository.deleteById(clientId);
     }
 
-    // Método auxiliar para buscar cliente por ID
     private Client findClientById(Long clientId) {
         return clientRepository.findById(clientId)
                 .orElseThrow(() -> new ResourceNotFoundException("Client does not exist with the given ID : " + clientId));
+    }
+
+    private void saveClientAddresses(List<AddressDto> addressList, Client client) {
+        if (addressList != null && !addressList.isEmpty()) {
+            List<Address> addresses = addressList.stream()
+                    .map(addressDto -> mapToAddress(addressDto, client))
+                    .collect(Collectors.toList());
+            addressRepository.saveAll(addresses);
+        }
+    }
+
+    private Address mapToAddress(AddressDto addressDto, Client client) {
+        Address address = new Address();
+        address.setClient(client);
+        BeanUtils.copyProperties(addressDto, address, "client"); // Copia as propriedades de addressDto para address
+        return address;
     }
 }
