@@ -8,6 +8,7 @@ import lombok.Setter;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
+import java.util.ArrayList;
 import java.util.List;
 
 @Getter
@@ -53,5 +54,5 @@ public class ClientDto {
 
     private boolean blocked;
 
-    private List<AddressDto> addressList;// Mapeia a lista de endereços sem a referência de volta ao cliente
+    private List<AddressDto> addressList = new ArrayList<>();// Mapeia a lista de endereços sem a referência de volta ao cliente
 }

@@ -91,12 +91,23 @@ public class ClientServiceImpl implements ClientService {
     }
 
     @Override
-    public void deleteClient(Long clientId) {
-        if (!clientRepository.existsById(clientId)) {
-            throw new ResourceNotFoundException("Client does not exist with the given ID : " + clientId);
-        }
-        clientRepository.deleteById(clientId);
+    public void deleteClient(Long id) {
+        Client client = clientRepository.findById(id)
+                .orElseThrow(() -> new ResourceNotFoundException("Client does not exist with the given ID : " + id));
+        clientRepository.deleteById(id);
     }
+
+    public ClientDto getClientByEmail(String email) {
+        Client client = clientRepository.findByEmail(email)
+                .orElseThrow(() -> new ResourceNotFoundException("Client not found with email: " + email));
+        return ClientMapper.mapToClientDto(client);
+    }
+
+    public Page<ClientDto> findClientsByName(String name, Pageable pageable) {
+        Page<Client> clients = clientRepository.findByNameContainingIgnoreCase(name, pageable);
+        return clients.map(ClientMapper::mapToClientDto);
+    }
+
 
     @Override
     public ClientDto createOrUpdateClient(ClientDto clientDto) {
