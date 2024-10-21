@@ -1,0 +1,17 @@
+com\github\eykemesquita\crud_api\Config\SecurityConfig.class
+com\github\eykemesquita\crud_api\mapper\AddressMapper.class
+com\github\eykemesquita\crud_api\entity\Address.class
+com\github\eykemesquita\crud_api\controller\ClientController.class
+com\github\eykemesquita\crud_api\CrudApiApplication.class
+com\github\eykemesquita\crud_api\dto\AddressDto.class
+com\github\eykemesquita\crud_api\repository\ClientRepository.class
+com\github\eykemesquita\crud_api\service\ClientService.class
+com\github\eykemesquita\crud_api\mapper\ClientMapper.class
+com\github\eykemesquita\crud_api\repository\AddressRepository.class
+com\github\eykemesquita\crud_api\service\impl\ClientServiceImpl.class
+com\github\eykemesquita\crud_api\Config\SwaggerConfig.class
+com\github\eykemesquita\crud_api\exception\ResourceNotFoundException.class
+com\github\eykemesquita\crud_api\Config\WebConfig.class
+com\github\eykemesquita\crud_api\entity\Client.class
+com\github\eykemesquita\crud_api\entity\SapSyncStatus.class
+com\github\eykemesquita\crud_api\dto\ClientDto.class

@@ -1,0 +1,17 @@
+C:\Users\eyke1\Documents\GitHub\CVLB-Test-BackEnd\src\main\java\com\github\eykemesquita\crud_api\Config\SecurityConfig.java
+C:\Users\eyke1\Documents\GitHub\CVLB-Test-BackEnd\src\main\java\com\github\eykemesquita\crud_api\Config\SwaggerConfig.java
+C:\Users\eyke1\Documents\GitHub\CVLB-Test-BackEnd\src\main\java\com\github\eykemesquita\crud_api\Config\WebConfig.java
+C:\Users\eyke1\Documents\GitHub\CVLB-Test-BackEnd\src\main\java\com\github\eykemesquita\crud_api\controller\ClientController.java
+C:\Users\eyke1\Documents\GitHub\CVLB-Test-BackEnd\src\main\java\com\github\eykemesquita\crud_api\CrudApiApplication.java
+C:\Users\eyke1\Documents\GitHub\CVLB-Test-BackEnd\src\main\java\com\github\eykemesquita\crud_api\dto\AddressDto.java
+C:\Users\eyke1\Documents\GitHub\CVLB-Test-BackEnd\src\main\java\com\github\eykemesquita\crud_api\dto\ClientDto.java
+C:\Users\eyke1\Documents\GitHub\CVLB-Test-BackEnd\src\main\java\com\github\eykemesquita\crud_api\entity\Address.java
+C:\Users\eyke1\Documents\GitHub\CVLB-Test-BackEnd\src\main\java\com\github\eykemesquita\crud_api\entity\Client.java
+C:\Users\eyke1\Documents\GitHub\CVLB-Test-BackEnd\src\main\java\com\github\eykemesquita\crud_api\entity\SapSyncStatus.java
+C:\Users\eyke1\Documents\GitHub\CVLB-Test-BackEnd\src\main\java\com\github\eykemesquita\crud_api\exception\ResourceNotFoundException.java
+C:\Users\eyke1\Documents\GitHub\CVLB-Test-BackEnd\src\main\java\com\github\eykemesquita\crud_api\mapper\AddressMapper.java
+C:\Users\eyke1\Documents\GitHub\CVLB-Test-BackEnd\src\main\java\com\github\eykemesquita\crud_api\mapper\ClientMapper.java
+C:\Users\eyke1\Documents\GitHub\CVLB-Test-BackEnd\src\main\java\com\github\eykemesquita\crud_api\repository\AddressRepository.java
+C:\Users\eyke1\Documents\GitHub\CVLB-Test-BackEnd\src\main\java\com\github\eykemesquita\crud_api\repository\ClientRepository.java
+C:\Users\eyke1\Documents\GitHub\CVLB-Test-BackEnd\src\main\java\com\github\eykemesquita\crud_api\service\ClientService.java
+C:\Users\eyke1\Documents\GitHub\CVLB-Test-BackEnd\src\main\java\com\github\eykemesquita\crud_api\service\impl\ClientServiceImpl.java
