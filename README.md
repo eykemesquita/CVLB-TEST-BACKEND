@@ -64,6 +64,7 @@ Este projeto é licenciado sob a MIT License.
 Para mais informações ou dúvidas, entre em contato:
 
 Nome: Eyke Mesquita Teixeira
+<br><br>
 Email: eyke1313@gmail.com
 
 ## Agradecimentos
