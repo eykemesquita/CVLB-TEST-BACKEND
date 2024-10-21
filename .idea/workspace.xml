@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="75b72e6b-b283-4d34-8e5b-14597c291e1b" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;eykemesquita&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/eykemesquita/CVLB-Test-BackEnd.git&quot;,
+    &quot;accountId&quot;: &quot;7a517631-eeeb-4f4c-8ed1-718d3f4e8811&quot;
+  }
+}</component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHomeTypeForPersistence" value="WRAPPER" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="2nccbGJO13RclDJv0xSxyyNWEm4" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "JUnit.ClientServiceImplTest.executor": "Run",
+    "JUnit.ClientServiceImplTest.testCreateClient.executor": "Run",
+    "JUnit.ClientServiceImplTest.testCreateClient_EmailAlreadyExists.executor": "Run",
+    "JUnit.ClientServiceImplTest.testDeleteClient.executor": "Run",
+    "JUnit.ClientServiceImplTest.testDeleteClient_NotFound.executor": "Run",
+    "JUnit.ClientServiceImplTest.testFindByEmail.executor": "Run",
+    "JUnit.ClientServiceImplTest.testFindByNameContaining.executor": "Run",
+    "JUnit.ClientServiceImplTest.testGetClientById.executor": "Run",
+    "JUnit.ClientServiceImplTest.testGetClientById_NotFound.executor": "Run",
+    "JUnit.ClientServiceImplTest.testUpdateClient.executor": "Run",
+    "JUnit.ClientServiceImplTest.testUpdateClient_NotFound.executor": "Run",
+    "Maven.crud-api [clean,install].executor": "Run",
+    "Maven.crud-api [clean,test].executor": "Run",
+    "Maven.crud-api [clean].executor": "Run",
+    "Maven.crud-api [install].executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "Spring Boot.CrudApiApplication.executor": "Run",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/eyke1/Documents/GitHub/CVLB-Test-BackEnd/src/main/resources/db",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\eyke1\Documents\GitHub\CVLB-Test-BackEnd\src\main\resources\db" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\eyke1\Documents\GitHub\CVLB-Test-BackEnd\src\main\resources" />
+    </key>
+    <key name="ExtractSuperBase.RECENT_KEYS">
+      <recent name="com.github.eykemesquita.crud_api.service" />
+    </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn clean test " />
+      <command value="mvn clean install" />
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.CrudApiApplication">
+    <configuration name="ClientServiceImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="crud-api" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.github.eykemesquita.crud_api.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.github.eykemesquita.crud_api.service" />
+      <option name="MAIN_CLASS_NAME" value="com.github.eykemesquita.crud_api.service.ClientServiceImplTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ClientServiceImplTest.testCreateClient_EmailAlreadyExists" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="crud-api" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.github.eykemesquita.crud_api.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.github.eykemesquita.crud_api.service" />
+      <option name="MAIN_CLASS_NAME" value="com.github.eykemesquita.crud_api.service.ClientServiceImplTest" />
+      <option name="METHOD_NAME" value="testCreateClient_EmailAlreadyExists" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ClientServiceImplTest.testFindByEmail" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="crud-api" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.github.eykemesquita.crud_api.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.github.eykemesquita.crud_api.service" />
+      <option name="MAIN_CLASS_NAME" value="com.github.eykemesquita.crud_api.service.ClientServiceImplTest" />
+      <option name="METHOD_NAME" value="testFindByEmail" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ClientServiceImplTest.testFindByNameContaining" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="crud-api" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.github.eykemesquita.crud_api.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.github.eykemesquita.crud_api.service" />
+      <option name="MAIN_CLASS_NAME" value="com.github.eykemesquita.crud_api.service.ClientServiceImplTest" />
+      <option name="METHOD_NAME" value="testFindByNameContaining" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ClientServiceImplTest.testUpdateClient_NotFound" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="crud-api" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.github.eykemesquita.crud_api.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.github.eykemesquita.crud_api.service" />
+      <option name="MAIN_CLASS_NAME" value="com.github.eykemesquita.crud_api.service.ClientServiceImplTest" />
+      <option name="METHOD_NAME" value="testUpdateClient_NotFound" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="CVLB-Test-BackEnd" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="CVLB-Test-BackEnd" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CrudApiApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="crud-api" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.github.eykemesquita.crud_api.CrudApiApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.ClientServiceImplTest" />
+        <item itemvalue="JUnit.ClientServiceImplTest.testFindByNameContaining" />
+        <item itemvalue="JUnit.ClientServiceImplTest.testFindByEmail" />
+        <item itemvalue="JUnit.ClientServiceImplTest.testUpdateClient_NotFound" />
+        <item itemvalue="JUnit.ClientServiceImplTest.testCreateClient_EmailAlreadyExists" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.18034.62" />
+        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-IU-241.18034.62" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="75b72e6b-b283-4d34-8e5b-14597c291e1b" name="Changes" comment="" />
+      <created>1729275874432</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1729275874432</updated>
+      <workItem from="1729275875738" duration="11543000" />
+      <workItem from="1729445705349" duration="3097000" />
+      <workItem from="1729453183832" duration="30547000" />
+      <workItem from="1729520641775" duration="8565000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
