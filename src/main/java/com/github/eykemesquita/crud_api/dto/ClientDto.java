@@ -1,5 +1,6 @@
 package com.github.eykemesquita.crud_api.dto;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -15,6 +16,7 @@ import java.util.List;
 @AllArgsConstructor
 public class ClientDto {
 
+    @JsonIgnore
     private Long id;
 
     private String docNumber;
@@ -27,13 +29,9 @@ public class ClientDto {
 
     private LocalDate birthDate;
 
-    private boolean isEmployee;
-
     private String stateInscription;
 
     private String municipalInscription;
-
-    private boolean isBlocked;
 
     private String createdBy;
 
@@ -51,5 +49,9 @@ public class ClientDto {
 
     private boolean pushOptIn;
 
-    private List<AddressDto> addressList;  // Mapeia a lista de endereços sem a referência de volta ao cliente
+    private boolean employee;
+
+    private boolean blocked;
+
+    private List<AddressDto> addressList;// Mapeia a lista de endereços sem a referência de volta ao cliente
 }

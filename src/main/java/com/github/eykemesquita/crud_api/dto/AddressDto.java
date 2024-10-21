@@ -1,5 +1,6 @@
 package com.github.eykemesquita.crud_api.dto;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.github.eykemesquita.crud_api.entity.SapSyncStatus;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -12,6 +13,7 @@ import lombok.Setter;
 @AllArgsConstructor
 public class AddressDto {
 
+    @JsonIgnore
     private Long id;
 
     private String createdBy;

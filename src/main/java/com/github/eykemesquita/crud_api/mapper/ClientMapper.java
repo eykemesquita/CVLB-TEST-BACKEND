@@ -22,10 +22,8 @@ public class ClientMapper {
                 client.getEmail(),
                 client.getPhone(),
                 client.getBirthDate(),
-                client.isEmployee(),
                 client.getStateInscription(),
                 client.getMunicipalInscription(),
-                client.isBlocked(),
                 client.getCreatedBy(),
                 client.getModifiedBy(),
                 client.getCreatedDate(),
@@ -34,7 +32,10 @@ public class ClientMapper {
                 client.isSmsOptIn(),
                 client.isWhatsappOptIn(),
                 client.isPushOptIn(),
-                addressList
+                client.isEmployee(),
+                client.isBlocked(),
+                addressList // O campo addressList agora é o último
+
         );
     }
 
