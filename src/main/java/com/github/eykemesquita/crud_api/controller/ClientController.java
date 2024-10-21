@@ -11,6 +11,7 @@ import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import io.swagger.v3.oas.annotations.responses.ApiResponses;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.AllArgsConstructor;
+import org.springframework.data.domain.Page;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -80,14 +81,12 @@ public class ClientController {
             @ApiResponse(responseCode = "200", description = "List of clients successfully retrieved"),
     })
     @GetMapping
-    public ResponseEntity<List<ClientDto>> getAllClients(
+    public ResponseEntity<Page<ClientDto>> getAllClients(
             @RequestParam(value = "name", required = false) String name,
             @RequestParam(value = "page", defaultValue = "0") int page,
             @RequestParam(value = "size", defaultValue = "10") int size,
             @RequestParam(value = "sort", defaultValue = "name,asc") String sort) {
-        System.out.println("GET request received for retrieving all clients with pagination");
-        // You can update the service to handle filtering and pagination as necessary
-        List<ClientDto> clients = clientService.getAllClients();
+        Page<ClientDto> clients = clientService.getAllClients(name, page, size, sort);
         return ResponseEntity.ok(clients);
     }
 

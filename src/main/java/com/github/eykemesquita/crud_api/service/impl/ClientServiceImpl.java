@@ -134,10 +134,9 @@ public class ClientServiceImpl implements ClientService {
 
     @Override
     public Page<ClientDto> getAllClients(String name, int page, int size, String sort) {
-        Pageable pageable = PageRequest.of(page, size, getSort(sort));  // Usando o método getSort()
+        Pageable pageable = PageRequest.of(page, size, getSort(sort));
 
         Page<Client> clientPage;
-
         if (name != null && !name.isEmpty()) {
             clientPage = clientRepository.findByNameContainingIgnoreCase(name, pageable);
         } else {
@@ -150,9 +149,12 @@ public class ClientServiceImpl implements ClientService {
 
     private Sort getSort(String sort) {
         try {
-            return Sort.by(sort);
+            String[] sortParams = sort.split(",");
+            String field = sortParams[0]; // Campo para ordenar
+            Sort.Direction direction = Sort.Direction.fromString(sortParams.length > 1 ? sortParams[1] : "asc"); // Direção (asc ou desc)
+            return Sort.by(direction, field);
         } catch (Exception e) {
-            return Sort.by("name"); // fallback para ordenar por nome se o parâmetro for inválido
+            return Sort.by(Sort.Direction.ASC, "name"); // fallback para ordenar por nome se o parâmetro for inválido
         }
     }
 
