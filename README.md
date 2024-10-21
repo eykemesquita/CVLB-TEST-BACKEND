@@ -58,7 +58,8 @@ spring.datasource.url=jdbc:mysql://localhost:3306/nome_do_banco<br><br> spring.d
 Contribuições são bem-vindas! Se você tem sugestões ou melhorias, fique à vontade para abrir um Pull Request.
 
 ## Licença
-Este projeto é licenciado sob a MIT License.
+
+Este projeto está licenciado sob a [Licença MIT](./MIT.LICENSE).
 
 ## Contato
 Para mais informações ou dúvidas, entre em contato:
