@@ -5,7 +5,7 @@ import com.github.eykemesquita.crud_api.entity.Address;
 
 public class AddressMapper {
 
-    // Mapeia Address (entidade) para AddressDto (DTO)
+    // Converte a entidade Address para AddressDto
     public static AddressDto mapToAddressDto(Address address) {
         return new AddressDto(
                 address.getId(),
@@ -26,7 +26,7 @@ public class AddressMapper {
         );
     }
 
-    // Mapeia AddressDto (DTO) para Address (entidade)
+    // Converte AddressDto para a entidade Address
     public static Address mapToAddress(AddressDto addressDto) {
         Address address = new Address();
         address.setId(addressDto.getId());

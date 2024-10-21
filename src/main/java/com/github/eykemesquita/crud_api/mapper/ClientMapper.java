@@ -10,6 +10,7 @@ import java.util.stream.Collectors;
 
 public class ClientMapper {
 
+    // Converte a entidade Client para ClientDto
     public static ClientDto mapToClientDto(Client client) {
         List<AddressDto> addressList = client.getAddresses().stream()
                 .map(AddressMapper::mapToAddressDto)
@@ -34,18 +35,16 @@ public class ClientMapper {
                 client.isPushOptIn(),
                 client.isEmployee(),
                 client.isBlocked(),
-                addressList // O campo addressList agora é o último
-
+                addressList // Lista de endereços associada
         );
     }
 
+    // Converte ClientDto para a entidade Client
     public static Client mapToClient(ClientDto clientDto) {
-        // Certifique-se de que a variável 'addressList' é declarada corretamente
         List<Address> addressList = clientDto.getAddressList().stream()
                 .map(AddressMapper::mapToAddress)
                 .collect(Collectors.toList());
 
-        // Certifique-se de que a variável 'client' é declarada corretamente com o construtor adequado
         Client client = new Client(
                 clientDto.getId(),
                 clientDto.getDocNumber(),
@@ -65,14 +64,11 @@ public class ClientMapper {
                 clientDto.isSmsOptIn(),
                 clientDto.isWhatsappOptIn(),
                 clientDto.isPushOptIn(),
-                addressList  // Passando a lista de endereços como último argumento
+                addressList // Lista de endereços associada
         );
 
-        // Agora, o 'client' está corretamente inicializado, e você pode associar a lista de endereços
-        client.setAddresses(addressList);  // Associando a lista de Address ao Client
+        client.setAddresses(addressList);  // Associa a lista de endereços ao cliente
 
         return client;
     }
-
 }
-

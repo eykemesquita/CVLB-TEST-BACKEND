@@ -7,7 +7,6 @@ import java.util.List;
 
 public interface AddressRepository extends JpaRepository<Address, Long> {
 
-    // Método para encontrar os endereços por ID do cliente
+    // Encontra todos os endereços associados ao ID de um cliente específico
     List<Address> findByClientId(Long clientId);
-
 }

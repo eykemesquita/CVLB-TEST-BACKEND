@@ -1,8 +1,7 @@
 package com.github.eykemesquita.crud_api.entity;
 
 public enum SapSyncStatus {
-    SUCCESS,
-    PENDING,
-    ERROR;
+    SUCCESS,    // Sincronização bem-sucedida
+    PENDING,    // Sincronização pendente
+    ERROR;      // Erro na sincronização
 }
-

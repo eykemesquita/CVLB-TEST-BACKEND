@@ -21,10 +21,11 @@ public class Client {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id")
     private Long id;
 
     @Column(name = "doc_number", nullable = false, unique = true)
-    private String docNumber;
+    private String docNumber;  // Documento único do cliente
 
     @Column(name = "name")
     private String name;
@@ -74,8 +75,6 @@ public class Client {
     @Column(name = "push_opt_in")
     private boolean pushOptIn;
 
-    // Relação com Address (endereço)
     @OneToMany(mappedBy = "client", cascade = CascadeType.ALL, orphanRemoval = true)
-    private List<Address> addresses = new ArrayList<>();
-
+    private List<Address> addresses = new ArrayList<>();  // Relação com Address
 }
